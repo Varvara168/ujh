@@ -1,6 +1,7 @@
-﻿{
-    public class User
+﻿namespace ChudoObuv.Models
 {
+    public class User
+    {
     public const string AdminRole = "Администратор";
     public const string ManagerRole = "Менеджер";
     public const string ClientRole = "Авторизованный пользователь";
@@ -13,10 +14,9 @@
     public string Role { get; set; }
 
     public string FullName => $"{LastName} {FirstName} {Patronymic}".Trim(); 
-24 
-  
+
         public bool IsAdmin => Role == AdminRole;
 
     public bool IsManagerOrAdmin => Role == ManagerRole || Role == AdminRole;
-} 
+    } 
 } 

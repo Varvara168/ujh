@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dTsfxHLNEyM=",
+  "dgSpecHash": "z5hmFfg/Dy0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Student\\Documents\\s\\ChudoObuv\\ChudoObuv\\ChudoObuv.csproj",
+  "projectFilePath": "C:\\Users\\Администратор\\Documents\\Новая папка\\ChudoObuv\\ChudoObuv\\ChudoObuv.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Student\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\mysqlconnector\\2.6.2\\mysqlconnector.2.6.2.nupkg.sha512"
+    "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Администратор\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Администратор\\.nuget\\packages\\mysqlconnector\\2.6.2\\mysqlconnector.2.6.2.nupkg.sha512"
   ],
   "logs": []
 }

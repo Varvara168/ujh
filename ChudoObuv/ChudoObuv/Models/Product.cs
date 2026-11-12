@@ -1,12 +1,10 @@
-﻿using ChudoObuv.Logic;
-using System.IO;
-using WpfApp1.Logic;
-
+﻿using System.IO;
+using ChudoObuv.Logic;
 namespace ChudoObuv.Models
 {
-    /// <summary> 
-    /// Товар (модель обуви) для вывода в каталоге. 
-    /// </summary> 
+    /// <summary>
+    /// Товар (модель обуви) для вывода в каталоге.
+    /// </summary>
     public class Product
     {
         public int Id { get; set; }
@@ -20,21 +18,15 @@ namespace ChudoObuv.Models
         public string ImageFile { get; set; }
         public int TotalQuantity { get; set; }
         public bool HasOrdersInPreviousMonth { get; set; }
-
         public string Title => $"{Manufacturer} | {Name}";
-
         public decimal DiscountedPrice => PriceCalculator.CalculateDiscountedPrice(Price,
-HasOrdersInPreviousMonth);
-
+        HasOrdersInPreviousMonth);
         public bool HasDiscount => DiscountedPrice < Price;
-
         public string QuantityLabel => PriceCalculator.GetQuantityLabel(TotalQuantity);
-
         public bool IsLowStock => PriceCalculator.IsLowStock(TotalQuantity);
-
-        /// <summary> 
-        /// Путь к изображению товара; если файла нет — картинка-заглушка. 
-        /// </summary> 
+        /// <summary>
+        /// Путь к изображению товара; если файла нет — картинка-заглушка.
+        /// </summary>
         public string ImagePath
         {
             get
@@ -43,8 +35,10 @@ HasOrdersInPreviousMonth);
                 if (!string.IsNullOrWhiteSpace(ImageFile))
                 {
                     string path = Path.Combine(folder, "Images", ImageFile);
+
                     if (File.Exists(path))
                     {
+
                         return path;
                     }
                 }
